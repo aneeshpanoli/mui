@@ -10,4 +10,27 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
+// disable underline
+    <TextField
+            {...params}
+            InputProps={{
+              ...params.InputProps,
+              disableUnderline: true,
+              // endAdornment: (
+              //   <InputAdornment position="start">
+              //      {progress ? <ProgressBar style={props.progressStyle}/> : null}
+              //   </InputAdornment>
+              // ),
+              startAdornment: (
+                <InputAdornment position="start">
+                  <SearchIcon
+                    style={{ color: "black", marginLeft: "0.5rem" }}
+                  />
+                </InputAdornment>
+              ),
+            }}
+            placeholder="Enter your health goal"
+            variant="standard"
+          />
+
 
